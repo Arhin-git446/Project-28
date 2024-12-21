@@ -1,0 +1,8 @@
+Explanation:
+HTML Structure: The HTML contains a button that, when clicked, triggers the causeError function. It also includes a paragraph to display any error messages.
+
+JavaScript:
+
+The causeError function attempts to call an undefined function (someUndefinedFunction), which generates an error.
+The try block contains the code that might throw an error.
+The catch block captures the error and displays an error message in the paragraph with the ID errorMessage.

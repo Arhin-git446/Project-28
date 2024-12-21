@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Error Handling Example</title>  
+</head>  
+<body>  
+    <h1>JavaScript Error Handling Example</h1>  
+    <button onclick="causeError()">Click Me to Cause an Error</button>  
+    <p id="errorMessage" style="color: red;"></p>  
+
+    <script>  
+        function causeError() {  
+            try {  
+                // Intentionally causing an error  
+                let result = someUndefinedFunction(); // This function is not defined  
+            } catch (error) {  
+                // Handle the error  
+                document.getElementById('errorMessage').innerText = "An error occurred: " + error.message;  
+            }  
+        }  
+    </script>  
+</body>  
+</html>
